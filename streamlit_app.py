@@ -157,7 +157,7 @@ fig1 = px.density_heatmap(
     x="pka_value",
     nbinsx=100,  # Increased number of bins for better granularity
     title="Heatmap of pKa Values in Foods",
-    color_continuous_scale=px.colors.sequential.Plasma  # Changed color scale for better contrast
+    color_continuous_scale=px.colors.sequential.Plasma,  # Changed color scale for better contrast
 )
 
 fig1.update_layout(
@@ -165,10 +165,8 @@ fig1.update_layout(
     yaxis_title="Density",
     margin=dict(l=40, r=40, t=40, b=40),
     coloraxis_colorbar=dict(
-        title="Density",
-        tickvals=[0, 0.2, 0.4, 0.6, 0.8, 1],
-        ticktext=["Low"]
-    )
+        title="Density", tickvals=[0, 0.2, 0.4, 0.6, 0.8, 1], ticktext=["Low"]
+    ),
 )
 
 st.plotly_chart(fig1)
@@ -328,7 +326,6 @@ fig2 = px.scatter(
     color_continuous_scale=px.colors.sequential.Viridis,
 )
 
-# Add a horizontal line at pH 5.5
 fig2.add_shape(
     type="line",
     x0=0,
@@ -340,7 +337,6 @@ fig2.add_shape(
     line=dict(color="Red", width=2, dash="dash"),
 )
 
-# Add annotation for the critical pH threshold
 fig2.add_annotation(
     x=0.5,
     y=5.5,
@@ -380,7 +376,6 @@ st.markdown(
 )
 st.header("Defense Mechanisms: Saliva and Toothpaste")
 st.subheader("4: Buffering Action of Saliva")
-
 
 
 st.markdown("**Title:** Bicarbonate Buffering System in Saliva")
