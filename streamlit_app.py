@@ -395,5 +395,21 @@ st.latex(r"Ca_5(PO_4)_3OH + F^- \, \rightleftharpoons \, Ca_5(PO_4)_3F + OH^-")
 
 st.header("Conclusion")
 st.markdown(
-    "In this website I have attempted to explore the acidity and basicity of common foods, their impact on dental health, along with the body's natural defense mechanisms. For me, understanding the chemical properties of the foods I consume, has helped me to make informed choices to protect my teeth and overall health."
+    "In this website I have attempted to explore the acidity and basicity of common foods, their impact on dental health, along with the body's natural defense mechanisms. For me, understanding the chemical properties of the foods I consume, has helped me to make informed choices to protect my teeth and overall health. though I must admit it was more just beacuse I like messing around with python."
 )
+st.image("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2dubnAxMGcwN2ozazJzY2pvazhyM2R0Zm5hdDhjdzI2NzYwaDFqYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NGIBa8a9KWzoFxW1c8/giphy.webp", caption="This is me right now, I dident send the email and it was sitting in my drafts.")
+
+ascii_art = """
+⠀⠀⠀⠀⠀⠀⠀⠀⠀____
+　　　　　／＞　　フ
+　　　　　| 　_　 _ l
+　 　　　／` ミ＿xノ
+　　 　 /　　　 　 |
+　　　 /　 ヽ　　 ﾉ
+　 　 │　　|　|　|
+　／￣|　　 |　|　|
+　| (￣ヽ＿ヽ)__) __)
+　＼二つ
+"""
+
+st.text(ascii_art)
